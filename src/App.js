@@ -33,7 +33,8 @@ class App extends Component {
   }
 
   searchHandler(index,value){
-    let arr = this.state.isSearched.concat([])
+    // let arr = this.state.isSearched.concat([])
+    let arr = []
     this.state.itemArray.map((data, index) => {
       if (!value){
         return arr=[]
