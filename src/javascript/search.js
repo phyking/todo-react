@@ -1,19 +1,22 @@
-import React from 'react'
+import React from "react";
 
-export class Search extends React.Component{
-    seachHandler () {
-
-    }
-    
-    render () { return (
-        <div className='input_box'>
-            <input id = 'input1'></input>
-            <button id='search'>搜索</button>
-        </div>
-    )
-        // const searchInput = <input id = 'input1' ></input>
-        // const searchBtn = <button id='search' ></button>
-        // return 
+export class Search extends React.Component {
+    render() {
+        return (
+            <div className="input_box">
+                <input id="input1" />
+                <button
+                    id="search"
+                    onClick={() =>
+                        this.props.searched(
+                            this.props.index,
+                            document.getElementById("input1").value
+                        )
+                    }
+                >
+                    搜索
+                </button>
+            </div>
+        );
     }
 }
-
