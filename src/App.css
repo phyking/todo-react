@@ -22,8 +22,6 @@ header {
     font-size: 20px;
     text-align: center;
     margin-top: 20px;
-    /* padding: 0; */
-    /* line-height: 40px; */
     display: inline-block;
     /* overflow: scroll; */
     outline: none;
@@ -175,6 +173,10 @@ header {
     border-radius: 5px;
     float: right;
     cursor: pointer;
+}
+
+.delete {
+    clear: left;
 }
 
 #add_search_btn {
